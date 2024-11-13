@@ -41,3 +41,7 @@ def run_game():
         if tries == 0:
             print('Game Over...')
             break
+
+
+if __name__ == '__main__':
+    run_game()
