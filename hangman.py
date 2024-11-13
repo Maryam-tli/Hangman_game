@@ -22,3 +22,7 @@ def run_game():
                 blanks += 1
 
         print()
+
+        if blanks == 0:
+            print('you got it !')
+            break
