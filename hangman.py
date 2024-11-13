@@ -38,5 +38,6 @@ def run_game():
         if guess not in word:
             tries -= 1
             print(f'sorry , that was wrong... ({tries} tries remaining)')
-
-
+        if tries == 0:
+            print('Game Over...')
+            break
