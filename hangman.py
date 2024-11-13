@@ -33,3 +33,10 @@ def run_game():
             print(f'You already used: {guess}. please try with another letter!')
             continue
 
+        guessed += guess
+
+        if guess not in word:
+            tries -= 1
+            print(f'sorry , that was wrong... ({tries} tries remaining)')
+
+
