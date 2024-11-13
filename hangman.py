@@ -26,3 +26,10 @@ def run_game():
         if blanks == 0:
             print('you got it !')
             break
+
+        guess: str = input('Enter a letter: ')
+
+        if guess in guessed:
+            print(f'You already used: {guess}. please try with another letter!')
+            continue
+
